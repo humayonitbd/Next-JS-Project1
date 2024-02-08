@@ -10,7 +10,7 @@ export default function Mission() {
     <div>
       <h2>Misson Page</h2>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus in libero ullam voluptates blanditiis quo earum, ipsam reiciendis magni. Sint nostrum a, commodi laborum doloribus corporis quo quidem numquam quia.</div>
-      <Image placeholder={blur} src={thum}  alt='thum image'/>
+      <Image placeholder="blur" src={thum}  alt='thum image'/>
       <Button />
     </div>
   )

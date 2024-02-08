@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
+
+export const metadata = {
+  title: "About Page",
+  description: "This is About Page Describtion!!",
+}; 
+
 export default function Aboutlayout({children}) {
   return (
     <div>
