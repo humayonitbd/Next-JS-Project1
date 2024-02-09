@@ -1,4 +1,5 @@
 import getAllPosts from '@/lib/getAllPosts'
+import Link from 'next/link';
 import React from 'react'
 
 export default async function Posts() {
@@ -15,6 +16,7 @@ export default async function Posts() {
                 posts.map(post => <><div key={post.id} className='bg-green-500 text-white p-2 '>
                     <h1 className='text-xl font-semibold text-red-600'>{post.title}</h1>
                     <p>{post.body}</p>
+                   <Link href={`/posts/${post.id}`}><button className='btn px-4 py-1 text-blue-500 bg-white text-lg mt-5'>See more</button></Link> 
                     </div></>)
             }
         </div>
