@@ -7,7 +7,7 @@ export default async function PostSingle({params}) {
   return (
     <div className="bg-orange-300 text-black p-2">
         <h2>Single Page Post Id {post.id}</h2>
-        <p>{post.title}</p>
+        <p className="text-xl font-semibold">{post.title}</p>
         <p>{post.body}</p>
     </div>
   )
