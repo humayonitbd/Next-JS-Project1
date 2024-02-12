@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         </nav>
         <hr />
         {children}
-        <footer>Footer page</footer>
+        <footer className="mt-10">Footer page</footer>
       </body>
     </html>
   );
