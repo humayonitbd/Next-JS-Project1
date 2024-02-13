@@ -1,5 +1,6 @@
 
 import Comments from "@/app/components/Comments";
+import getAllPosts from "@/lib/getAllPosts";
 import getPost from "@/lib/getPost";
 import getPostComments from "@/lib/getPostCommet";
 import { Suspense } from "react";
@@ -39,3 +40,13 @@ export default async function PostSingle({params}) {
     </div>
   )
 }
+
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+ 
+  return posts.map((post) => ({
+    id: post.id.toString(),
+  }))
+}
+ 
